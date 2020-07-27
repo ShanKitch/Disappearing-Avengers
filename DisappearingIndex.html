@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="DisappearingStyle.css">
+        <link href='https://fonts.googleapis.com/css?family=Bungee Inline' rel='stylesheet'>
+        <title>Disappearing Avengers</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $('img').click(function() {
+                    $(this).fadeOut(1800);
+                });
+                $('button.restore').click(function(){
+                    $('img').fadeIn(1800);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header">
+                <h1>Disappearing Avengers!</h1>
+                <h2>Click Each Avenger's Picture To Make Them Disappear</h2>
+            </div>
+            <div id="maincontent">
+                <div class="firstrow">
+                    <img src="cap.jpg"  alt="cap">
+                    <img src="ironman.jpg"  alt="ironman">
+                    <img src="thor.jpg"  alt="thor">
+                    <img src="hulk.jpg"  alt="hulk">
+                </div>
+                <div class="secondrow">
+                    <img src="blackwidow.jpg"  alt="blackwidow">
+                    <img src="hawkeye.jpg"  alt="hawkeye">
+                    <img src="Spiderman.jpg"  alt="spiderman">
+                    <img src="nickfury.jpg"  alt="nickfury">
+                </div>
+                <button class="restore">Restore The Avengers!</button>
+            </div>
+        </div>  
+    </body>
+    </html>
