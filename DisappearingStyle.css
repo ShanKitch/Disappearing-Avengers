@@ -1,9 +1,8 @@
 
 #wrapper{
     background: linear-gradient(lightgrey,grey,rgb(115, 115, 115));
-    width:1500px;
+    width:auto;
     height:auto;
-    margin-left: 200px;
     margin-top: -30px;
 }
 .header{
@@ -32,7 +31,7 @@ h2{
     height:650px;
 }
 .firstrow,.secondrow{
-    margin-left:210px;
+    margin-left:415px;
     margin-top:15px;
 }
 img {
@@ -53,6 +52,6 @@ button{
     border-radius:2px;
     border: rgb(71,71,71) solid 2px;
     margin-top: 25px;
-    margin-left: 600px;
+    margin-left: 800px;
 
 }
